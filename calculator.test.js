@@ -1,6 +1,6 @@
-import { test, expect } from '@jest/globals';
+const { test: jestTest, expect: jestExpect } = require('@jest/globals');
 
 // Example dummy test to verify Jest works
-test('adds 1 + 2 to equal 3', () => {
-  expect(1 + 2).toBe(3);
+jestTest('adds 1 + 2 to equal 3', () => {
+  jestExpect(1 + 2).toBe(3);
 });
