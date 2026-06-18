@@ -10,6 +10,8 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "0 8 * * *"
+  release:
+    types: [published]
 
 jobs:
   build:
@@ -24,6 +26,20 @@ jobs:
         with:
           node-version: 24
 
+      # --- Task 7: Print Context Data ---
+      - name: Show Node Version
+        run: node --version
+
+      - name: Show NPM Version
+        run: npm --version
+
+      - name: Show Event
+        run: echo ${{ github.event_name }}
+
+      - name: Show Date
+        run: date
+
+      # --- Project Workflow Steps ---
       - name: Install Dependencies
         run: npm install
 
@@ -46,3 +62,10 @@ jobs:
     steps:
       - name: Generate report
         run: echo "Generating Report"
+
+  # --- Task 11: Create a Second Job ---
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Message
+        run: echo "Hello Students"

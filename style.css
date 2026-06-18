@@ -1,0 +1,83 @@
+/* Clean Reset & Centering Layout */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Calculator Card Container */
+.calculator-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    color: #333333;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+}
+
+/* Form Fields */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #555555;
+}
+
+/* Action Controls Grid */
+.button-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin: 20px 0;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Output Banner */
+.result-display {
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.result-display h3 {
+    margin: 0;
+    color: #495057;
+}
+
+#result-value {
+    color: #2b2d42;
+    font-weight: bold;
+}
