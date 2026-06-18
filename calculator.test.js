@@ -3,10 +3,10 @@ const { add, subtract, multiply, divide, square, cube } = require('./calculator'
 
 describe('Calculator Basic Operations', () => {
   
-  // Test Adding deliberate failure
+  // Test Adding
   test('adds 10 + 5 to equal 15', () => {
-    expect(add(10, 5)).toBe(99);
-  });
+  expect(add(10, 5)).toBe(15); // ✅ Restored to correct value
+});
   test('adds negative numbers -5 + -3 to equal -8', () => {
     expect(add(-5, -3)).toBe(-8);
   });
